@@ -13,6 +13,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { clsx } from "clsx";
 import { divide, isEmpty } from "lodash";
 import { useRouter } from "next/navigation";
+import { getImageUrl } from "@/lib/utils";
 
 const defaultErrorState = {
   title: "",
@@ -115,7 +116,7 @@ export default function CreatePage() {
                 width="200"
                 height="200"
                 alt="image test A"
-                src={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${imageA}`}
+                src={getImageUrl(imageA)}
               />
             )}
 
@@ -147,7 +148,7 @@ export default function CreatePage() {
                 width="200"
                 height="200"
                 alt="image test B"
-                src={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${imageB}`}
+                src={getImageUrl(imageB)}
               />
             )}
             <UploadButton
