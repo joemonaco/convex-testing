@@ -17,7 +17,7 @@ export default function Home() {
             <>
               <div
                 key={thumbnail._id}
-                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300 cursor-pointer"
+                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300 cursor- pointer"
               >
                 <h2 className="m-4 text-center">{thumbnail.title}</h2>
                 <Image
